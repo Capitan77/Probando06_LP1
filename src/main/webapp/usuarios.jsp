@@ -8,13 +8,21 @@
 </head>
 <body>
 
+<!--Habilitamos un pequeño form que servirá para poder cerrar la sesion-->
+<!--a través del action login hacia ValidarSesionServlet y serpa tipo GET-->
+
 <form action="login" method="GET">
     <button type="submit" class="btn btn-danger">Cerrar Sesion</button>
 </form>
 
+
+<!--Inicializamos un div que contendra la tabla con los datos del SQL que recuperamos-->
      <div class="container mt-5">
 
      <table class="table table-bordered table-hover">
+
+     <!--cabecera de nuestra tabla-->
+
              <thead>
                   <tr>
                       <th>ID</th>
@@ -23,6 +31,11 @@
                       <th>Correo</th>
                   </tr>
              </thead>
+
+     <!--Cuerpo que comformará la tabla-->
+     <!--Donde aplicaremos un taglib = etiqueta personalizada. forEach, con este recorreremos el atributo usuarios-->
+     <!--con una variale global llamada usu y con eso retornaremos los datos de usuarios-->
+
              <tbody>
              <c:forEach var="usu" items="${usuarios}">
              <tr>

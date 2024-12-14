@@ -2,6 +2,16 @@ package com.cibertec.models;
 
 public class Usuario {
 
+    //creamos una clase usuario que usaremos para almacenar todos
+    //los datos que vayamos a resivir desde SQL
+
+    //habilitamos los atributos
+    //ponemos contructores complejos
+    //1* con todos lo parametros
+    //2* con todos los parametros menos el ID
+
+    //inicializamos GETTERS y SETTERS
+
     private int id;
     private String nombre;
     private String apellido;
